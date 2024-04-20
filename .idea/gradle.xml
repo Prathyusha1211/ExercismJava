@@ -4,11 +4,27 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/error-handling" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/error-handling" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/leap" />
         <option name="gradleJvm" value="15" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/java/leap" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/simple-linked-list" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/simple-linked-list" />
           </set>
         </option>
       </GradleProjectSettings>
