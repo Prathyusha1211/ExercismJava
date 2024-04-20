@@ -21,6 +21,30 @@
         </option>
       </GradleProjectSettings>
       <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/nth-prime" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/nth-prime" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/pythagorean-triplet" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/pythagorean-triplet" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="externalProjectPath" value="$PROJECT_DIR$/java/rna-transcription" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/java/rna-transcription" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+      <GradleProjectSettings>
         <option name="externalProjectPath" value="$PROJECT_DIR$/java/simple-linked-list" />
         <option name="modules">
           <set>

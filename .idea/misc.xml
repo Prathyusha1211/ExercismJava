@@ -4,6 +4,9 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/java/error-handling" />
     <file type="web" url="file://$PROJECT_DIR$/java/leap" />
+    <file type="web" url="file://$PROJECT_DIR$/java/nth-prime" />
+    <file type="web" url="file://$PROJECT_DIR$/java/pythagorean-triplet" />
+    <file type="web" url="file://$PROJECT_DIR$/java/rna-transcription" />
     <file type="web" url="file://$PROJECT_DIR$/java/simple-linked-list" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="15" project-jdk-type="JavaSDK">
