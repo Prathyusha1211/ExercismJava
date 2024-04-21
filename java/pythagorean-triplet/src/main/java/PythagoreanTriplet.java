@@ -1,16 +1,26 @@
-import java.util.*;
-public class PythagoreanTriplet {
-    private int a;
-    private int b;
-    private int c;
-    public PythagoreanTriplet(int a, int b, int c) {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+class PythagoreanTriplet {
+
+    private final int a;
+    private final int b;
+    private final int c;
+
+    PythagoreanTriplet(int a, int b, int c) {
         this.a = a;
         this.b = b;
         this.c = c;
+        //System.out.println("a in cons= " + a);
+        //System.out.println("b in cons = " + b);
+        //System.out.println("c in cons = " + c);
     }
+    @Override
     public String toString() {
-        return String.format("(%d, %d, %d)", a, b, c);
+        return "(" + a + ", " + b + ", " + c + ")";
     }
+
     public boolean equals(Object o) {
         if ( this == o ) {
             return true;
@@ -21,41 +31,54 @@ public class PythagoreanTriplet {
             return false;
         }
     }
-    public static TripletsList makeTripletsList() {
-        return new TripletsList();
+
+    static TripletListBuilder makeTripletsList() {
+        return new TripletListBuilder();
+        //throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
     }
-    public static class TripletsList {
-        private int n;
-        private Integer maxFactor = null;
 
-        private static final double PERIMETER_RATIO_LIMIT = 1 + 1 + Math.sqrt(2);
-        public TripletsList withFactorsLessThanOrEqualTo(int maxFactor) {
+    static class TripletListBuilder {
+
+        private int sum;
+        private int maxFactor;
+
+        TripletListBuilder thatSumTo(int sum) {
+            this.sum = sum;
+            System.out.println("sum in func = "+sum);
+            return this;
+        }
+
+        TripletListBuilder withFactorsLessThanOrEqualTo(int maxFactor) {
             this.maxFactor = maxFactor;
-            return this;
-        }
-        public TripletsList thatSumTo(int n) {
-            this.n = n;
-            if ( maxFactor == null ) {
-                maxFactor = n;
-            }
-
+            System.out.println("max factor in func = "+maxFactor);
             return this;
         }
 
-        public List<PythagoreanTriplet> build() {
+        List<PythagoreanTriplet> build() {
             List<PythagoreanTriplet> triplets = new ArrayList<>();
-            for (int a = 1; a <= Math.floor(n / PERIMETER_RATIO_LIMIT); a++) {
-                int numerator = a * a + (int) Math.pow(n-a, 2);
-                int denominator = 2 * (n - a);
-                if ( numerator % denominator == 0 ) {
-                    int c = numerator / denominator;
-                    if ( c <= maxFactor ) {
-                        int b = n - a - c;
-                        triplets.add(new PythagoreanTriplet(a, b, c));
+            System.out.println("sum = " + sum);
+            System.out.println("maxFactor = " + maxFactor);
+            for (int a = 1; a < sum/2; a++) {
+                for (int b = a + 1; b < sum/2; b++) {
+                    int c = sum - a - b;
+                    if (maxFactor == 0 || c <= maxFactor) {
+                        if (a * a + b * b == c * c) {
+                            System.out.println("a after if = " + a);
+                            System.out.println("b = " + b);
+                            System.out.println("c = " + c);
+                            PythagoreanTriplet triplet = new PythagoreanTriplet(a, b, c);
+                            System.out.println("triplet = "+triplet);
+                            triplets.add(triplet);
+                        }
                     }
                 }
+
             }
+            //triplets = Collections.singletonList(triplets);
             return triplets;
+            //throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
         }
+
     }
+
 }

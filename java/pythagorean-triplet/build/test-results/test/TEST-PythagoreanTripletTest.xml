@@ -1,15 +1,141 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PythagoreanTripletTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-04-20T14:18:35" hostname="LAPTOP-NO5CQF3A" time="0.06">
+<testsuite name="PythagoreanTripletTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2024-04-21T10:42:12" hostname="LAPTOP-NO5CQF3A" time="0.351">
   <properties/>
-  <testcase name="tripletsWhoseSumIs840WithFactorsLessThanOrEqualTo370()" classname="PythagoreanTripletTest" time="0.042"/>
-  <testcase name="tripletsWhoseSumIs1000()" classname="PythagoreanTripletTest" time="0.001"/>
-  <testcase name="tripletsWhoseSumIs1001()" classname="PythagoreanTripletTest" time="0.001"/>
-  <testcase name="tripletsWhoseSumIs108()" classname="PythagoreanTripletTest" time="0.0"/>
-  <testcase name="tripletsWhoseSumIs840()" classname="PythagoreanTripletTest" time="0.001"/>
-  <testcase name="tripletsWhoseSumIs12()" classname="PythagoreanTripletTest" time="0.001"/>
+  <testcase name="tripletsWhoseSumIs840WithFactorsLessThanOrEqualTo370()" classname="PythagoreanTripletTest" time="0.052"/>
+  <testcase name="tripletsWhoseSumIs1000()" classname="PythagoreanTripletTest" time="0.003"/>
+  <testcase name="tripletsWhoseSumIs1001()" classname="PythagoreanTripletTest" time="0.004"/>
+  <testcase name="tripletsWhoseSumIs108()" classname="PythagoreanTripletTest" time="0.002"/>
+  <testcase name="tripletsWhoseSumIs840()" classname="PythagoreanTripletTest" time="0.007"/>
+  <testcase name="tripletsWhoseSumIs12()" classname="PythagoreanTripletTest" time="0.002"/>
   <testcase name="tripletsWhoseSumIs90()" classname="PythagoreanTripletTest" time="0.001"/>
-  <testcase name="tripletsWhoseSumIs30000WithFactorsLessThanOrEqualTo12500()" classname="PythagoreanTripletTest" time="0.002"/>
-  <testcase name="tripletsWhoseSumIs30000()" classname="PythagoreanTripletTest" time="0.002"/>
-  <system-out><![CDATA[]]></system-out>
+  <testcase name="tripletsWhoseSumIs30000WithFactorsLessThanOrEqualTo12500()" classname="PythagoreanTripletTest" time="0.119"/>
+  <testcase name="tripletsWhoseSumIs30000()" classname="PythagoreanTripletTest" time="0.152"/>
+  <system-out><![CDATA[max factor in func = 370
+sum in func = 840
+sum = 840
+maxFactor = 370
+a after if = 120
+b = 350
+c = 370
+triplet = (120, 350, 370)
+a after if = 140
+b = 336
+c = 364
+triplet = (140, 336, 364)
+a after if = 168
+b = 315
+c = 357
+triplet = (168, 315, 357)
+a after if = 210
+b = 280
+c = 350
+triplet = (210, 280, 350)
+a after if = 240
+b = 252
+c = 348
+triplet = (240, 252, 348)
+max factor in func = 1000
+sum in func = 1000
+sum = 1000
+maxFactor = 1000
+a after if = 200
+b = 375
+c = 425
+triplet = (200, 375, 425)
+sum in func = 1001
+sum = 1001
+maxFactor = 0
+sum in func = 108
+sum = 108
+maxFactor = 0
+a after if = 27
+b = 36
+c = 45
+triplet = (27, 36, 45)
+sum in func = 840
+sum = 840
+maxFactor = 0
+a after if = 40
+b = 399
+c = 401
+triplet = (40, 399, 401)
+a after if = 56
+b = 390
+c = 394
+triplet = (56, 390, 394)
+a after if = 105
+b = 360
+c = 375
+triplet = (105, 360, 375)
+a after if = 120
+b = 350
+c = 370
+triplet = (120, 350, 370)
+a after if = 140
+b = 336
+c = 364
+triplet = (140, 336, 364)
+a after if = 168
+b = 315
+c = 357
+triplet = (168, 315, 357)
+a after if = 210
+b = 280
+c = 350
+triplet = (210, 280, 350)
+a after if = 240
+b = 252
+c = 348
+triplet = (240, 252, 348)
+sum in func = 12
+sum = 12
+maxFactor = 0
+a after if = 3
+b = 4
+c = 5
+triplet = (3, 4, 5)
+sum in func = 90
+sum = 90
+maxFactor = 0
+a after if = 9
+b = 40
+c = 41
+triplet = (9, 40, 41)
+a after if = 15
+b = 36
+c = 39
+triplet = (15, 36, 39)
+max factor in func = 12500
+sum in func = 30000
+sum = 30000
+maxFactor = 12500
+a after if = 7500
+b = 10000
+c = 12500
+triplet = (7500, 10000, 12500)
+sum in func = 30000
+sum = 30000
+maxFactor = 0
+a after if = 1200
+b = 14375
+c = 14425
+triplet = (1200, 14375, 14425)
+a after if = 1875
+b = 14000
+c = 14125
+triplet = (1875, 14000, 14125)
+a after if = 5000
+b = 12000
+c = 13000
+triplet = (5000, 12000, 13000)
+a after if = 6000
+b = 11250
+c = 12750
+triplet = (6000, 11250, 12750)
+a after if = 7500
+b = 10000
+c = 12500
+triplet = (7500, 10000, 12500)
+]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
